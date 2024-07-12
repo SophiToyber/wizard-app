@@ -1,0 +1,10 @@
+<div class="container">
+  <app-wizard-top-bar [currentStep]="currentStep" [totalSteps]="totalSteps"></app-wizard-top-bar>
+  <div class="content-container">
+    <app-wizard-content [currentStep]="currentStep" [totalSteps]="totalSteps"></app-wizard-content>
+  </div>
+  <div class="d-flex justify-content-between w-75">
+    <button class="btn" (click)="moveToPreviousStep()" [disabled]="currentStep === 1">Back</button>
+    <button class="btn" (click)="moveToNextStep()" [disabled]="currentStep === totalSteps">Next</button>
+  </div>
+</div>

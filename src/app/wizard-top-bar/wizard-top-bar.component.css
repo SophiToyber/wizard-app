@@ -1,0 +1,51 @@
+.wizard-steps {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wizard-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.diamond-container {
+  position: relative;
+  z-index: 1;
+  margin: 0 40px;
+}
+
+.diamond {
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border: 2px solid #cccccc;
+  color: #6c63ff;
+  text-align: center;
+  line-height: 60px;
+  transform: rotate(45deg);
+  margin: 0 auto;
+}
+
+.diamond.active {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.diamond span {
+  transform: rotate(-45deg);
+  display: block;
+  font-size: 1.25rem;
+}
+
+.line {
+  height: 4px;
+  background-color: #cccccc;
+  flex: 1;
+  z-index: 0;
+}

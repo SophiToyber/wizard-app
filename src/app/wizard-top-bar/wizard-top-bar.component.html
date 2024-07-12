@@ -1,0 +1,10 @@
+<div class="wizard-steps d-flex justify-content-between align-items-center mt-5 mb-5">
+  <div *ngFor="let step of [].constructor(totalSteps); let i = index" class="wizard-step">
+    <div class="diamond-container">
+      <div class="diamond" [class.active]="i + 1 === currentStep">
+        <span>{{ i + 1 }}</span>
+      </div>
+    </div>
+    <div class="line" *ngIf="i < totalSteps - 1"></div>
+  </div>
+</div>

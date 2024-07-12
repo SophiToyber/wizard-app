@@ -1,0 +1,14 @@
+.text-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2rem;
+  color: #6c63ff;
+}
+
+.step-description {
+  font-size: 1rem;
+  color: #6c63ff;
+}

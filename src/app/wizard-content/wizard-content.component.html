@@ -1,0 +1,6 @@
+<div class="text-center">
+  <h2>Step {{currentStep}}</h2>
+  <p *ngIf="currentStep === 1" class="step-description">You started here!</p>
+  <p *ngIf="currentStep > 1 && currentStep < totalSteps" class="step-description">You continued here!</p>
+  <p *ngIf="currentStep === totalSteps" class="step-description">You finished here!</p>
+</div>

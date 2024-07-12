@@ -1,0 +1,22 @@
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  background-color: #6c63ff;
+  border: none;
+  color: white;
+  width: 150px;
+}
+
+button:disabled {
+  background-color: #cccccc;
+}
+
+button:hover:enabled {
+  background-color: #5a52d6;
+}
